@@ -1,0 +1,17 @@
+﻿@using Events.Models
+@model Events.Models.EventData
+@{  
+    
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (Event e in Model.getEvents()){
+    <div>
+        @Html.ActionLink(e.Name, "Event", "Main", new {
+            Id = e.Id
+        }, null);
+        <span>@e.Desc</span>
+        <span>@e.Location</span>
+    </div>
+}
