@@ -1,0 +1,32 @@
+﻿@model ProjectXXX.Models.Event
+
+@{
+    ViewBag.Title = "Description";
+}
+
+<h2>Description</h2>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>From</td>
+            <td>To</td>
+            <td>Location</td>
+        </tr>
+    </thead>
+    <tbody>
+       @{
+               <tr>
+               <td>@Model.ID</td>
+               <td>@Model.Name</td>
+                <td>@Model.Description</td>
+                <td>@Model.From.ToShortDateString()</td>
+                <td>@Model.To.ToShortDateString()</td>
+                <td>@Model.Location</td>
+                </tr> 
+        }
+    </tbody>
+</table>
