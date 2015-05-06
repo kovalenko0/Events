@@ -20,12 +20,16 @@ namespace ProjectXXX.Controllers
         }
 
         [HttpGet]
-        public ActionResult Description(int? id)
+        public ActionResult Description(string id)
         {
-            if (id.HasValue && DataProvider.IsIndexAllowed((int)id))
+            try
             {
-                return View(DataProvider.GetEventByID((int)id));
-            } return HttpNotFound(); 
+                return View(DataProvider.GetEventByID(id));
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                return HttpNotFound(); 
+            }
         }
     }
 }
