@@ -22,6 +22,8 @@ namespace ProjectXXX.Controllers
         [HttpGet]
         public ActionResult Description(string id)
         {
+            if (!DataProvider.isDateConsists)
+                DataProvider.CreateData();
             try
             {
                 return View(DataProvider.GetEventByID(id));
