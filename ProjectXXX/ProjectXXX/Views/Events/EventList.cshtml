@@ -1,35 +1,39 @@
-﻿@model IEnumerable<ProjectXXX.Models.Event>
+﻿@using System.Globalization
+@model IEnumerable<ProjectXXX.Models.Event>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>EventList</h2>
-
-<table>
-    <thead>
-        <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Description</td>
-            <td>From</td>
-            <td>To</td>
-            <td>Location</td>
-        </tr>
-    </thead>
-    <tbody>
-        @{
-            foreach (var element in Model)
-            {
-                <tr>
-                    <td>@element.ID</td>
-                    <td>@Html.RouteLink("Description", "Description", new { id = element.ID})</td>
-                    <td>@element.Description</td>
-                    <td>@element.From.ToShortDateString()</td>
-                    <td>@element.To.ToShortDateString()</td>
-                    <td>@element.Location</td>
-                </tr>
-            }
-        }
-    </tbody>
-</table>
+@{
+    foreach (var element in Model)
+    {
+        <div class="event">
+            <div class="date">
+                <div class="day">
+                    @element.From.Day
+                </div>
+                <div class="month">
+                    
+                    @CultureInfo.InvariantCulture.DateTimeFormat.GetAbbreviatedMonthName(element.From.Month)
+                </div>
+            </div>
+            <div class="info">
+                <h2 class="title">
+                    @element.Name
+                </h2>
+                <div class="location">
+                    @element.Location
+                </div>
+                <div class="members-count">
+                    293 members 
+                    @Html.RouteLink("Description", "Description", new { id = element.ID })
+                </div>
+            </div>
+            <a class="join" href="#">
+                <img src="@Url.Content("~/Content/Image/Join.png")" class="image"/>
+                <p class="caption">Join</p>
+            </a>
+        </div>
+    }
+}

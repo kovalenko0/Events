@@ -3,37 +3,47 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Style/MasterPage.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Style/EventList.css")" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li>
+    <header class="page-header main-padding">
+        <nav class="navigation">
+            <ul class="menu">
                 @{ string routeName = ViewContext.RouteData.DataTokens.Values.ElementAt(0).ToString();
                 }
 
                 @if (routeName == "Home" || routeName == "Default")
                 {
-                    <text>Home Page</text>
+                    <li class="item active">
+                        Home
+                    </li>
                 }
                 else
                 {
-                    @Html.RouteLink("Home Page", "Home")
+                    <li class="item">
+                        @Html.RouteLink("Home", "Home")
+                    </li>
                 }
-            </li>
-            <li>
                 @if (routeName == "EventList")
                 {
-                    <text>Event list</text>
+                    <li class="item active">
+                        List
+                    </li>
                 }
                 else
                 {
-                    @Html.RouteLink("Event List", "EventList")
+                    <li class="item">
+                        @Html.RouteLink("List", "EventList")
+                    </li>
                 }
-            </li>
-        </ul>
-    </nav>
-    @RenderBody()
+            </ul>
+        </nav>
+
+    </header>
+    <div class="content main-padding">
+        @RenderBody()
+    </div>
 </body>
 </html>
