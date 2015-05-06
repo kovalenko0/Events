@@ -13,14 +13,14 @@ namespace ProjectXXX.Models
         public DateTime From { get; set; }
         public DateTime To { get; set; }
         public string Location { get; set; }
-        public Event(string Name, string Description, DateTime From, DateTime To, string Location)
+        public Event(string name, string description, DateTime from, DateTime to, string location)
         {
             this.ID = Guid.NewGuid().ToString();
-            this.Name = Name;
-            this.Description = Description;
-            this.From = From;
-            this.To = To;
-            this.Location = Location;
+            this.Name = name;
+            this.Description = description;
+            this.From = from;
+            this.To = to;
+            this.Location = location;
         }
     }
 }

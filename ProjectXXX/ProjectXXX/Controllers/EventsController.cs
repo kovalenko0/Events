@@ -11,10 +11,10 @@ namespace ProjectXXX.Controllers
     {
         //
         // GET: /Events/
-
+        [HttpGet]
         public ActionResult EventList()
         {
-            if (!DataProvider.isDateConsists)
+            if (!DataProvider.IsDateConsists)
                 DataProvider.CreateData();
             return View(DataProvider.Data);
         }
@@ -22,7 +22,7 @@ namespace ProjectXXX.Controllers
         [HttpGet]
         public ActionResult Description(string id)
         {
-            if (!DataProvider.isDateConsists)
+            if (!DataProvider.IsDateConsists)
                 DataProvider.CreateData();
             try
             {

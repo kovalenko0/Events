@@ -25,3 +25,30 @@ d:\users\шурик\documents\visual studio 2012\Projects\ProjectXXX\ProjectXXX\
 d:\users\шурик\documents\visual studio 2012\Projects\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.dll
 d:\users\шурик\documents\visual studio 2012\Projects\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.pdb
 D:\Users\Шурик\Documents\Visual Studio 2012\Projects\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.csprojResolveAssemblyReference.cache
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ProjectXXX.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ProjectXXX.pdb
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Newtonsoft.Json.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Helpers.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Mvc.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Razor.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.Deployment.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.Razor.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Newtonsoft.Json.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Helpers.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Mvc.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.Razor.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.Deployment.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\System.Web.WebPages.Razor.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.Helpers.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.Mvc.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.Razor.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.WebPages.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.csprojResolveAssemblyReference.cache
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.pdb
