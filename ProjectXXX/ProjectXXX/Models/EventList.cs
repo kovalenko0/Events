@@ -20,7 +20,7 @@ namespace ProjectXXX.Models
         }
         static public Event GetEventByID(string id)
         {
-            var e = Data.Find(x => x.ID == id);
+            var e = Data.Find(x => x.Id == id);
             if (e != null)
             {
                 return e;

@@ -7,7 +7,7 @@ namespace ProjectXXX.Models
 {
     public class Event
     {
-        public string ID { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime From { get; set; }
@@ -15,7 +15,7 @@ namespace ProjectXXX.Models
         public string Location { get; set; }
         public Event(string name, string description, DateTime from, DateTime to, string location)
         {
-            this.ID = Guid.NewGuid().ToString();
+            this.Id = Guid.NewGuid().ToString();
             this.Name = name;
             this.Description = description;
             this.From = from;
