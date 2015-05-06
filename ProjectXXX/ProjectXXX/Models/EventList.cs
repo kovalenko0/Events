@@ -5,26 +5,7 @@ using System.Web;
 
 namespace ProjectXXX.Models
 {
-    public class Event
-    {
-        public int ID { get; set; }
-        public string Name {get;set;}
-        public string Description{get;set;}
-        public DateTime From{get;set;}
-        public DateTime To { get; set; }
-        public string Location { get; set; }
-        public Event(int ID, string Name, string Description, DateTime From, DateTime To, string Location)
-        {
-            this.ID = ID;
-            this.Name = Name;
-            this.Description = Description;
-            this.From = From;
-            this.To = To;
-            this.Location = Location;
-        }
-    }
-
-    static public class List
+    static public class DataProvider
     {
         static public List<Event> Data { set; get; }
         static public bool isDateConsists = false;
@@ -40,6 +21,14 @@ namespace ProjectXXX.Models
         static public Event GetEventByID(int id)
         {
             return Data.ElementAt(id);
+        }
+        static public bool IsIndexAllowed(int id)
+        {
+            if (id < Data.Count && id > 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -17,16 +17,6 @@ namespace ProjectXXX.Controllers
             return View();
         }
 
-        public ActionResult EventList()
-        {
-            if(!List.isDateConsists)
-                List.CreateData();
-            return View(List.Data);
-        }
-        [HttpGet]
-        public ActionResult Description(int? id)
-        {
-            return View(List.GetEventByID((int)id));
-        }
+        
     }
 }
