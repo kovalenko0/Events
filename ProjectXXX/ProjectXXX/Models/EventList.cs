@@ -12,9 +12,9 @@ namespace ProjectXXX.Models
         static public void CreateData()
         {
             Data = new List<Event>();
-            for (int i = 1; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                Data.Add(new Event(i, "Name " + i, "Event " + i, new DateTime().AddDays(i - 1), new DateTime().AddDays(i), "X" + i));
+                Data.Add(new Event(i, "Name " + i, "Event " + i, new DateTime().AddDays(i), new DateTime().AddDays(i+1), "X" + i));
             }
             isDateConsists = true;
         }
@@ -24,7 +24,7 @@ namespace ProjectXXX.Models
         }
         static public bool IsIndexAllowed(int id)
         {
-            if (id < Data.Count && id > 0)
+            if (id < Data.Count && id >= 0)
             {
                 return true;
             }

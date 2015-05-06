@@ -3,14 +3,35 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    @*<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />*@
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <nav>
         <ul class="menu">
-            @*<li>@Html.RouteLink("Home Page", "Index")</li>
-            <li>@Html.RouteLink("Event List", "EventList")</li>*@
+            <li>
+                @{ string routeName = ViewContext.RouteData.DataTokens.Values.ElementAt(0).ToString();
+                }
+
+                @if (routeName == "Home" || routeName == "Default")
+                {
+                    <text>Home Page</text>
+                }
+                else
+                {
+                    @Html.RouteLink("Home Page", "Home")
+                }
+            </li>
+            <li>
+                @if (routeName == "EventList")
+                {
+                    <text>Event list</text>
+                }
+                else
+                {
+                    @Html.RouteLink("Event List", "EventList")
+                }
+            </li>
         </ul>
     </nav>
     @RenderBody()

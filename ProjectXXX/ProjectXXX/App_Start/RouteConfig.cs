@@ -7,34 +7,51 @@ using System.Web.Routing;
 
 namespace ProjectXXX
 {
+    public static class RouteCollectionExtensions
+    {
+        public static Route MapRouteWithName(this RouteCollection routes,
+        string name, string url, object defaults, object constraints)
+        {
+            Route route = routes.MapRoute(name, url, defaults, constraints);
+            route.DataTokens = new RouteValueDictionary();
+            route.DataTokens.Add("RouteName", name);
+
+            return route;
+        }
+    }
+
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
+            routes.MapRouteWithName(
                 name: "Home",
                 url: "home",
-                defaults: new { controller = "Home", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }, 
+                constraints: null
                 );
 
-            routes.MapRoute(
+            routes.MapRouteWithName(
                 name: "EventList",
                 url: "eventlist",
-                defaults: new { controller = "Events", action = "EventList" }
+                defaults: new { controller = "Events", action = "EventList" },
+                constraints: null
                 );
 
-            routes.MapRoute(
+            routes.MapRouteWithName(
                 name: "Description",
                 url: "description/{id}",
-                defaults: new { controller = "Events", action = "Description", id = 0 }
+                defaults: new { controller = "Events", action = "Description", id = 0 },
+                constraints: null
                 );
 
-            routes.MapRoute(
+            routes.MapRouteWithName(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional}
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                constraints: null
                 );
         }
     }
