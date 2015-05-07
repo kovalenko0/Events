@@ -14,7 +14,6 @@
                     @element.From.Day
                 </div>
                 <div class="month">
-                    
                     @CultureInfo.InvariantCulture.DateTimeFormat.GetAbbreviatedMonthName(element.From.Month)
                 </div>
             </div>
@@ -27,7 +26,7 @@
                 </div>
                 <div class="members-count">
                     293 members 
-                    @Html.RouteLink("Description", "Description", new { id = element.ID })
+                    @Html.RouteLink("Description", "Description", new { id = element.Id })
                 </div>
             </div>
             <a class="join" href="#">

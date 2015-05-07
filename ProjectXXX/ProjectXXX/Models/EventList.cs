@@ -8,7 +8,7 @@ namespace ProjectXXX.Models
     static public class DataProvider
     {
         static public List<Event> Data { set; get; }
-        static public bool isDateConsists = false;
+        static public bool IsDateConsists = false;
         static public void CreateData()
         {
             Data = new List<Event>();
@@ -16,11 +16,11 @@ namespace ProjectXXX.Models
             Data.Add(new Event("Start of conquering of France", "Some description.", new DateTime(2015, 6, 23), new DateTime().AddDays(3), "Avenue du Colonel Henri Rol-Tanguy, Paris, France"));
             Data.Add(new Event("Start of conquering of Belgium", "Some description.", new DateTime(2015, 7, 18), new DateTime().AddDays(3), "Place Jean Rey 80, Bruxelles, Belgium"));
             Data.Add(new Event("Start of conquering of Netherlands", "Some description.", new DateTime(2015, 8, 30), new DateTime().AddDays(3), "Museumstraat, 1071 Amsterdam, Netherlands"));
-            isDateConsists = true;
+            IsDateConsists = true;
         }
         static public Event GetEventByID(string id)
         {
-            Event e = Data.Find(x => x.ID == id);
+            var e = Data.Find(x => x.Id == id);
             if (e != null)
             {
                 return e;

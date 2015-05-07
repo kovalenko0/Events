@@ -19,16 +19,14 @@
         </tr>
     </thead>
     <tbody>
-       @{
                <tr>
-               <td>@Model.ID</td>
+               <td>@Model.Id</td>
                <td>@Model.Name</td>
                 <td>@Model.Description</td>
                 <td>@Model.From.ToShortDateString()</td>
                 <td>@Model.To.ToShortDateString()</td>
                 <td>@Model.Location</td>
                 </tr> 
-        }
     </tbody>
 </table>
 <button>Join</button>

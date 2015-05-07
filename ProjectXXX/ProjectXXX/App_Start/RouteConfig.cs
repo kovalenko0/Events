@@ -49,10 +49,17 @@ namespace ProjectXXX
 
             routes.MapRouteWithName(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 constraints: null
                 );
+            routes.MapRouteWithName(
+                name: "404-PageNotFound",
+                url: "{*url}",
+                defaults: new { controller = "Error", action = "PageNotFound" },
+                constraints: null
+            );
+         
         }
     }
 }
