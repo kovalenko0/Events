@@ -25,14 +25,6 @@ namespace ProjectXXX
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRouteWithName(
-                name: "Home",
-                url: "home",
-                defaults: new { controller = "Home", action = "Index" }, 
-                constraints: null
-                );
-
             routes.MapRouteWithName(
                 name: "EventList",
                 url: "eventlist",
@@ -48,17 +40,34 @@ namespace ProjectXXX
                 );
 
             routes.MapRouteWithName(
-                name: "Default",
-                url: "",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                name: "Create",
+                url: "Events/Create",
+                defaults: new { controller = "Events", action = "Create"},
                 constraints: null
                 );
+
+            routes.MapRouteWithName(
+              name: "EventNotFound",
+              url: "Description/{id}",
+              defaults: new { controller = "Error", action = "EventNotFound" },
+              constraints: null
+              );
+
+            routes.MapRouteWithName(
+                name: "Default",
+                url: "",
+                defaults: new { controller = "Home", action = "Index"},
+                constraints: null
+                );          
+
             routes.MapRouteWithName(
                 name: "404-PageNotFound",
                 url: "{*url}",
-                defaults: new { controller = "Error", action = "PageNotFound" },
+                defaults: new { controller = "Error", action = "PageNotFound", id = UrlParameter.Optional },
                 constraints: null
             );
+
+            
          
         }
     }

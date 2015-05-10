@@ -52,3 +52,17 @@ D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\ru\
 D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.csprojResolveAssemblyReference.cache
 D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.dll
 D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\obj\Debug\ProjectXXX.pdb
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\AutoMapper.Net4.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\AutoMapper.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Iesi.Collections.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\NHibernate.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\AutoMapper.pdb
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\AutoMapper.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\AutoMapper.Net4.pdb
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Iesi.Collections.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\NHibernate.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\NHibernate\Configuration\Hibernate.cfg.xml
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Business.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\NHibernateDataProvider.dll
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\Business.pdb
+D:\Users\Шурик\Documents\GitHub\Events\Events\ProjectXXX\ProjectXXX\bin\NHibernateDataProvider.pdb

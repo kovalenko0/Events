@@ -1,5 +1,5 @@
 ﻿@using System.Globalization
-@model IEnumerable<ProjectXXX.Models.Event>
+@model IEnumerable<ProjectXXX.Models.EventViewModel>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,10 +11,10 @@
         <div class="event">
             <div class="date">
                 <div class="day">
-                    @element.From.Day
+                    @element.FromDate.Day
                 </div>
                 <div class="month">
-                    @CultureInfo.InvariantCulture.DateTimeFormat.GetAbbreviatedMonthName(element.From.Month)
+                    @CultureInfo.InvariantCulture.DateTimeFormat.GetAbbreviatedMonthName(element.FromDate.Month)
                 </div>
             </div>
             <div class="info">

@@ -1,4 +1,4 @@
-﻿@model ProjectXXX.Models.Event
+﻿@model ProjectXXX.Models.EventViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -23,8 +23,8 @@
                <td>@Model.Id</td>
                <td>@Model.Name</td>
                 <td>@Model.Description</td>
-                <td>@Model.From.ToShortDateString()</td>
-                <td>@Model.To.ToShortDateString()</td>
+                <td>@Model.FromDate.ToShortDateString()</td>
+                <td>@Model.ToDate.ToShortDateString()</td>
                 <td>@Model.Location</td>
                 </tr> 
     </tbody>

@@ -16,5 +16,10 @@ namespace ProjectXXX.Controllers
             return View();
         }
 
+        public ActionResult EventNotFound()
+        {
+            return View();
+        }
+
     }
 }

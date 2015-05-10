@@ -5,22 +5,17 @@ using System.Web;
 
 namespace ProjectXXX.Models
 {
-    public class Event
+    public class EventViewModel
     {
         public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime From { get; set; }
-        public DateTime To { get; set; }
+        public DateTime FromDate { get; set; }
+        public DateTime ToDate { get; set; }
         public string Location { get; set; }
-        public Event(string name, string description, DateTime from, DateTime to, string location)
+        public EventViewModel()
         {
             this.Id = Guid.NewGuid().ToString();
-            this.Name = name;
-            this.Description = description;
-            this.From = from;
-            this.To = to;
-            this.Location = location;
         }
     }
 }
