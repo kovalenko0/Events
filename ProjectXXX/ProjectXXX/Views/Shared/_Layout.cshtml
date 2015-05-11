@@ -11,33 +11,12 @@
     <header class="page-header main-padding">
         <nav class="navigation">
             <ul class="menu">
-                @{ string routeName = ViewContext.RouteData.DataTokens.Values.ElementAt(0).ToString();
-                }
-
-                @if (routeName == "Home" || routeName == "Default")
-                {
-                    <li class="item active">
-                        <p>Home</p>
-                    </li>
-                }
-                else
-                {
-                    <li class="item">
-                        @Html.RouteLink("Home", "Default")
-                    </li>
-                }
-                @if (routeName == "EventList")
-                {
-                    <li class="item active">
-                        <p>List</p>
-                    </li>
-                }
-                else
-                {
-                    <li class="item">
-                        @Html.RouteLink("List", "EventList")
-                    </li>
-                }
+                @{
+                    string routeName = ViewContext.RouteData.DataTokens.Values.ElementAt(0).ToString();
+                    @NavigationLink("Home", "Default", routeName);
+                    @NavigationLink("Events", "EventList", routeName);
+                    @NavigationLink("Create Event", "Create", routeName);
+                 }  
             </ul>
         </nav>
 
@@ -47,3 +26,19 @@
     </div>
 </body>
 </html>
+
+@helper NavigationLink(string linkName, string routeName, string currentRouteName)
+{
+    if (string.Equals(routeName, currentRouteName, StringComparison.InvariantCultureIgnoreCase))
+    {
+        <li class="item active">
+            <p>@linkName</p>
+        </li>
+    }
+    else
+    {
+        <li class="item">
+            @Html.RouteLink(@linkName, routeName)
+        </li>
+    }
+}
